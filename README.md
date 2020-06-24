@@ -1,1 +1,2 @@
-# cmetzjr.github.io
+# 20200618class
+Class excercise
