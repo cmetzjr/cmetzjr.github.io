@@ -1,23 +1,183 @@
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Student Bio</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="container">
-        <h2>Charles Metzger</h2>
-        <img src="memolly.jpg" />
-        <p>My name is Charles. I live in South Jersey with my wife and 2 kids. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tellus vel sapien convallis mollis nec quis leo. Integer gravida consectetur massa, at convallis nisl rhoncus elementum. Maecenas at finibus sapien. Morbi quis sapien vel mauris blandit facilisis ut a erat. Duis fringilla nulla ipsum, sit amet eleifend lacus mollis sed. Nulla dapibus dolor eu ex varius, quis pharetra justo suscipit. Suspendisse tempus sed nisl sit amet suscipit. </p>
-        <h2>Contact Info</h2>
-        <ul>
-            <li>Email: <a href="mailto:cmetzjr@yahoo.com">cmetzjr@yahoo.com</a></li>
-            <li>GitHub: <a href="https://github.com/cmetzjr">https://github.com/cmetzjr</a></li>
-            <li>Portfolio: <a href="#">Coming soon</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- load stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="./Assets/style.css" rel='stylesheet'>
+  <!-- load font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- load Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+  <title>Portfolio of Charles Metzger</title>
+</head>
+
+<!-- site uses CSS Grid (not bootstrap grid system) with one breakpoint at 720px;-->
+
+<body class="container-fluid">
+
+  <!-- header is full width on xs, moves to top left >720px -->
+  <header id="header" class="">
+    <img src="assets/headshot_resized.jpg" alt="Charles Metzger headshot" height="200px" class="headshot">
+    <h1 class="text-uppercase">Charles <br>Metzger</h1>
+    <p class="jobtitle">Front End Developer</p>
+  </header>
+
+  <!-- main is full width on xs, fills right half >720px -->
+  <main id="main">
+    <div id="projects" class="major-section">
+      <h2 class="section-title">Projects</h2>
+      <!-- Project - MoreFootballLesCovid -->
+      <div class="project mb-4">
+        <h3 class="project-title">More Football, Less Covid</h3>
+        <p class="project-desc">NFL fans want to attend football games this season, but also minimize their risk of
+          contracting COVID-19. Built using HTML, CSS, Javascript, and jQuery. I contributed to the User Interface and
+          API calls. </p>
+        <!-- setup modal for screenshot -->
+        <div class="modal" id="modal-morefootball" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">More Football, Less Covid</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/football-covid.jpg" style="width:100%;height:100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- clicking the link activates the modal -->
+        <a href="" class="mr-2" data-toggle="modal" data-target="#modal-morefootball">Screenshot</a> |
+        <a class="mr-2 ml-2" href="https://cmetzjr.github.io/MoreFootballLessCovid/" target="_blank">Try it out!</a> |
+        <a class="ml-2" href="https://github.com/cmetzjr/MoreFootballLessCovid" target="_blank"><i
+            class="project-icon fab fa-github"></i>Repo</a>
+      </div>
+
+      <!-- Project - Weather Dashboard -->
+      <div class="project mb-4">
+        <h3 class="project-title">Weather Dashboard</h3>
+        <p class="project-desc">Find the current weather and 5-day forecast. Built using HTML, CSS, Javascript, jQuery,
+          and moment.js. This was a solo project. <br>
+          <!-- setup modal for screenshot -->
+          <div class="modal" id="modal-weather" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Weather Dashboard</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/weather-app.png" style="width:100%;height:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- clicking the link activates the modal -->
+          <a href="" class="mr-2" data-toggle="modal" data-target="#modal-weather">Screenshot</a> |
+          <a class="mr-2 ml-2" href="https://github.com/cmetzjr/Weather-Dashboard" target="_blank">Try it
+            out!</a> |
+          <a class="ml-2" href="https://github.com/cmetzjr/Weather-Dashboard/" target="_blank"><i
+              class="project-icon fab fa-github"></i>Repo</a>
+        </p>
+      </div>
+
+      <!-- Project - Work Day Scheduler -->
+      <div class="project mb-4">
+        <h3 class="project-title">Work Day Scheduler</h3>
+        <p class="project-desc">Simple app to plan your day! Built using HTML, CSS, Javascript, jQuery, and moment.js.
+          This was a solo project. <br>
+          <!-- setup modal for screenshot -->
+          <div class="modal" id="modal-scheduler" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Work Day Scheduler</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/work-day-scheduler.jpg" style="width:100%;height:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- clicking the link activates the modal -->
+          <a href="" class="mr-2" data-toggle="modal" data-target="#modal-scheduler">Screenshot</a> |
+          <a class="mr-2 ml-2" href="https://cmetzjr.github.io/Work-Day-Scheduler/" target="_blank">Try it out!</a> |
+          <a class="ml-2" href="https://github.com/cmetzjr/Work-Day-Scheduler/" target="_blank"><i
+              class="project-icon fab fa-github"></i>Repo</a>
+        </p>
+      </div>
     </div>
 
+    <!-- skills section as a styled unordered list -->
+    <div id="skills" class="major-section">
+      <h2 class="section-title">Relevant Skills</h2>
+      <ul class="skill-list list-group list-group-flush">
+        <li class="skill list-group-item"><i class="list-icon fab fa-html5"></i>HTML (Intermediate)</li>
+        <li class="skill list-group-item"><i class="list-icon fab fa-css3-alt"></i>CSS (Intermediate)</li>
+        <li class="skill list-group-item"><i class="list-icon fab fa-js"></i>JavaScript (Beginner)</li>
+        <li class="skill list-group-item"><i class="list-icon fas fa-tasks"></i>Project Management</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- bio is last in source order, moves to bottom left >720px -->
+  <aside id="bio" class="major-section">
+    <h2 class="section-title-different">Personal Bio</h2>
+    <p class="bio-text">Making a career change after 20 years of consulting and project management. First learned the
+      <code>&lt;blink&gt;</code> tag in 1996 during &quot;Intro to CS&quot; class. Through the years, I've taught myself
+      float layouts,
+      browser hacks, WordPress, and more while building small websites. Currently learning Full-Stack Development in
+      Rutgers Coding Bootcamp.</p>
+    <!-- uses Flexbox via Bootstrap's grid to display the contact links -->
+    <!-- phone and email address use Bootstrap tooltips on hover -->
+    <div class="contact-links row">
+      <div class="col-3"><a href="tel:1-999-999-9999" target="_blank" data-toggle="tooltip" title="1-999-999-9999"
+          id="phonenumber">
+          <i class="contact-link fas fa-phone-square fa-2x"></i></a></div>
+      <div class="col-3"><a href="mailto:cmetzjr@yahoo.com" target="_blank" data-toggle="tooltip"
+          title="cmetzjr@yahoo.com" id="emailaddress"><i class="contact-link fas fa-envelope-square fa-2x"></i></a>
+      </div>
+      <div class="col-3"><a href="https://github.com/cmetzjr" target="_blank"><i
+            class="contact-link fab fa-github fa-2x"></i></a></div>
+      <div class="col-3"><a href="https://www.linkedin.com/in/charlesvmetzger/" target="_blank"><i
+            class="contact-link fab fa-linkedin-in fa-2x"></i></a></div>
+      <button type="button" class="resume contact-link btn btn-outline-primary mt-2"><a
+          href="assets/cmetzger_resume.pdf">Download Resume (.pdf)</a></button>
+    </div>
+  </aside>
+
+  <footer id="footer" class="footer p-2">
+    <p class="">&copy;2020 Charles Metzger</p>
+  </footer>
+
+  <!-- JavaScript - required for modals and tooltips -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script>
+    // runs the tooltips on the elements
+    $('#phonenumber').tooltip();
+    $('#emailaddress').tooltip();
+  </script>
 </body>
+
 </html>
