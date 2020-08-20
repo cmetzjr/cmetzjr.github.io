@@ -1,6 +1,8 @@
 # Personal portfolio
 
 This portfolio was developed to share some coding projects and contact information.
+https://github.com/cmetzjr/cmetzjr.github.io
+
 
 ## Technology
 
