@@ -13,6 +13,6 @@ Mobile view:<br>
 <img src="assets/mobile-screenshot.png" width="200px">
 
 Desktop view:<br>
-<img src="assets/desktop-screenshot.png" width="200px">
+<img src="assets/desktop-screenshot.png" width="400px">
 
 
