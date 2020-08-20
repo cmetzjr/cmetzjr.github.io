@@ -10,9 +10,9 @@ The overall layout uses CSS Grid instead of Bootstrap's grid system. That allows
 
 ## Screenshots
 Mobile view:<br>
-<img src="assets/mobile-screenshot.jpg" width="200px">
+<img src="assets/mobile-screenshot.png" width="200px">
 
 Desktop view:<br>
-<img src="assets/desktop-screenshot.jpg" width="200px">
+<img src="assets/desktop-screenshot.png" width="200px">
 
 
